@@ -1,0 +1,14 @@
+query sensors {
+    equipment{
+        _id
+    }
+    sensors {
+        name
+        hasAnomaly
+        identifier
+        reading {
+            unitType
+            value
+        }
+    }
+}
