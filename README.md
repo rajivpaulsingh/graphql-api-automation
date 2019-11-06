@@ -1,4 +1,4 @@
-# ChordX API Automation Framework
+# GraphQL API Automation Framework
  
 ## Table of Contents
 - [Installation & Run](#installation)
