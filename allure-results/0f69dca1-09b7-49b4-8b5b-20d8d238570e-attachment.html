@@ -1,0 +1,27 @@
+<div>POST to http://dev.chordx.co:4000/</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;variables&quot;: &quot;{\n  \&quot;chartsFilter\&quot;: {\n    \&quot;chartType\&quot;: \&quot;CYLINDER_PRESSURE_HISTORY\&quot;\n  }\n}&quot;,
+    &quot;query&quot;: &quot;query getPerformanceData($chartsFilter: PerformanceDataFilter!) {\n performanceData(filter: $chartsFilter) {\n   data {\n     sensorIdentifier\n     name\n     unitType\n     readingType\n     values\n   }\n   startDate\n   endDate\n   chartType\n   scale\n }\n}&quot;
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://dev.chordx.co:4000/&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;variables&quot;: &quot;{\n  \&quot;chartsFilter\&quot;: {\n    \&quot;chartType\&quot;: \&quot;CYLINDER_PRESSURE_HISTORY\&quot;\n  }\n}&quot;,
+    &quot;query&quot;: &quot;query getPerformanceData($chartsFilter: PerformanceDataFilter!) {\n performanceData(filter: $chartsFilter) {\n   data {\n     sensorIdentifier\n     name\n     unitType\n     readingType\n     values\n   }\n   startDate\n   endDate\n   chartType\n   scale\n }\n}&quot;
+}&#39;
+</div>

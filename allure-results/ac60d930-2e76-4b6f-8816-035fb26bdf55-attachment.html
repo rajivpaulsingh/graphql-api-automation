@@ -1,0 +1,645 @@
+<div>Status code 200 </div>
+
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;data&quot;: {
+        &quot;plannedMaintenance&quot;: {
+            &quot;maintenanceJobs&quot;: [
+                {
+                    &quot;_id&quot;: &quot;01DQ5Y0D3FQHM12XH22EE6MT8Z&quot;,
+                    &quot;title&quot;: &quot;EXHAUST VALVE-02 H32000_ROUTINE_OVERHAUL&quot;,
+                    &quot;name&quot;: &quot;Exhaust Valve 2 Routine Overhaul&quot;,
+                    &quot;status&quot;: &quot;SCHEDULED&quot;,
+                    &quot;manualUrl&quot;: &quot;http://fof-dev-edge:11002/chordx/maintenance-manuals/H32000_Exhaust_Valve_Routine_Overhaul_m.pdf&quot;,
+                    &quot;scheduledDate&quot;: &quot;2025-01-12T00:00:00.000Z&quot;,
+                    &quot;statusUpdatedDate&quot;: &quot;2019-10-29T20:42:28.055Z&quot;,
+                    &quot;completedDate&quot;: null,
+                    &quot;findings&quot;: null,
+                    &quot;materials&quot;: [
+                        
+                    ],
+                    &quot;measurements&quot;: {
+                        &quot;preMeasurements&quot;: null,
+                        &quot;maintenance&quot;: null,
+                        &quot;postMeasurements&quot;: null,
+                        &quot;visualCheck&quot;: [
+                            {
+                                &quot;key&quot;: &quot;visualcheck_0&quot;,
+                                &quot;type&quot;: &quot;CHECKBOX&quot;,
+                                &quot;label&quot;: &quot;Valve sealing&quot;,
+                                &quot;isRequired&quot;: false,
+                                &quot;checkboxFieldValue&quot;: null
+                            },
+                            {
+                                &quot;key&quot;: &quot;visualcheck_1&quot;,
+                                &quot;type&quot;: &quot;CHECKBOX&quot;,
+                                &quot;label&quot;: &quot;Air piston operating for 15 minutes&quot;,
+                                &quot;isRequired&quot;: false,
+                                &quot;checkboxFieldValue&quot;: null
+                            },
+                            {
+                                &quot;key&quot;: &quot;visualcheck_2&quot;,
+                                &quot;type&quot;: &quot;CHECKBOX&quot;,
+                                &quot;label&quot;: &quot;Leak test&quot;,
+                                &quot;isRequired&quot;: false,
+                                &quot;checkboxFieldValue&quot;: null
+                            }
+                        ],
+                        &quot;notes&quot;: [
+                            {
+                                &quot;key&quot;: &quot;notes_0&quot;,
+                                &quot;type&quot;: &quot;TEXT&quot;,
+                                &quot;label&quot;: null,
+                                &quot;isRequired&quot;: false,
+                                &quot;textFieldValue&quot;: null
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    &quot;extensions&quot;: {
+        &quot;tracing&quot;: {
+            &quot;version&quot;: 1,
+            &quot;startTime&quot;: &quot;2019-11-06T18:46:16.321Z&quot;,
+            &quot;endTime&quot;: &quot;2019-11-06T18:46:16.775Z&quot;,
+            &quot;duration&quot;: 454311755,
+            &quot;execution&quot;: {
+                &quot;resolvers&quot;: [
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Query&quot;,
+                        &quot;fieldName&quot;: &quot;plannedMaintenance&quot;,
+                        &quot;returnType&quot;: &quot;MaintenanceJobs&quot;,
+                        &quot;startOffset&quot;: 203401,
+                        &quot;duration&quot;: 453593650
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJobs&quot;,
+                        &quot;fieldName&quot;: &quot;maintenanceJobs&quot;,
+                        &quot;returnType&quot;: &quot;[MaintenanceJob!]&quot;,
+                        &quot;startOffset&quot;: 453817751,
+                        &quot;duration&quot;: 24701
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;_id&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;_id&quot;,
+                        &quot;returnType&quot;: &quot;ID!&quot;,
+                        &quot;startOffset&quot;: 453866252,
+                        &quot;duration&quot;: 8400
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;title&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;title&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 453879152,
+                        &quot;duration&quot;: 4600
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;name&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;name&quot;,
+                        &quot;returnType&quot;: &quot;String!&quot;,
+                        &quot;startOffset&quot;: 453887052,
+                        &quot;duration&quot;: 4700
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;status&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;status&quot;,
+                        &quot;returnType&quot;: &quot;MaintenanceStatus!&quot;,
+                        &quot;startOffset&quot;: 453895152,
+                        &quot;duration&quot;: 5600
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;manualUrl&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;manualUrl&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 453905552,
+                        &quot;duration&quot;: 3900
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;scheduledDate&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;scheduledDate&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 453911952,
+                        &quot;duration&quot;: 4900
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;statusUpdatedDate&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;statusUpdatedDate&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 453919852,
+                        &quot;duration&quot;: 3300
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;completedDate&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;completedDate&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 453926152,
+                        &quot;duration&quot;: 5900
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;findings&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;findings&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 453934752,
+                        &quot;duration&quot;: 4200
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;materials&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;materials&quot;,
+                        &quot;returnType&quot;: &quot;[Material]&quot;,
+                        &quot;startOffset&quot;: 453940952,
+                        &quot;duration&quot;: 6500
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;measurements&quot;,
+                        &quot;returnType&quot;: &quot;MaintenanceMeasurements&quot;,
+                        &quot;startOffset&quot;: 453952552,
+                        &quot;duration&quot;: 5600
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;preMeasurements&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurements&quot;,
+                        &quot;fieldName&quot;: &quot;preMeasurements&quot;,
+                        &quot;returnType&quot;: &quot;[MaintenanceMeasurementField!]&quot;,
+                        &quot;startOffset&quot;: 453971853,
+                        &quot;duration&quot;: 8500
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;maintenance&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurements&quot;,
+                        &quot;fieldName&quot;: &quot;maintenance&quot;,
+                        &quot;returnType&quot;: &quot;[MaintenanceMeasurementField!]&quot;,
+                        &quot;startOffset&quot;: 453982953,
+                        &quot;duration&quot;: 5100
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;postMeasurements&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurements&quot;,
+                        &quot;fieldName&quot;: &quot;postMeasurements&quot;,
+                        &quot;returnType&quot;: &quot;[MaintenanceMeasurementField!]&quot;,
+                        &quot;startOffset&quot;: 453990353,
+                        &quot;duration&quot;: 5000
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;visualCheck&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurements&quot;,
+                        &quot;fieldName&quot;: &quot;visualCheck&quot;,
+                        &quot;returnType&quot;: &quot;[MaintenanceMeasurementField!]&quot;,
+                        &quot;startOffset&quot;: 453997153,
+                        &quot;duration&quot;: 5500
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;visualCheck&quot;,
+                            0,
+                            &quot;key&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurementCheckboxField&quot;,
+                        &quot;fieldName&quot;: &quot;key&quot;,
+                        &quot;returnType&quot;: &quot;String!&quot;,
+                        &quot;startOffset&quot;: 454041653,
+                        &quot;duration&quot;: 9400
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;visualCheck&quot;,
+                            0,
+                            &quot;type&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurementCheckboxField&quot;,
+                        &quot;fieldName&quot;: &quot;type&quot;,
+                        &quot;returnType&quot;: &quot;FieldType!&quot;,
+                        &quot;startOffset&quot;: 454054853,
+                        &quot;duration&quot;: 4800
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;visualCheck&quot;,
+                            0,
+                            &quot;label&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurementCheckboxField&quot;,
+                        &quot;fieldName&quot;: &quot;label&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 454064253,
+                        &quot;duration&quot;: 4300
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;visualCheck&quot;,
+                            0,
+                            &quot;isRequired&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurementCheckboxField&quot;,
+                        &quot;fieldName&quot;: &quot;isRequired&quot;,
+                        &quot;returnType&quot;: &quot;Boolean!&quot;,
+                        &quot;startOffset&quot;: 454071353,
+                        &quot;duration&quot;: 4400
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;visualCheck&quot;,
+                            0,
+                            &quot;checkboxFieldValue&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurementCheckboxField&quot;,
+                        &quot;fieldName&quot;: &quot;value&quot;,
+                        &quot;returnType&quot;: &quot;Boolean&quot;,
+                        &quot;startOffset&quot;: 454079253,
+                        &quot;duration&quot;: 4400
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;visualCheck&quot;,
+                            1,
+                            &quot;key&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurementCheckboxField&quot;,
+                        &quot;fieldName&quot;: &quot;key&quot;,
+                        &quot;returnType&quot;: &quot;String!&quot;,
+                        &quot;startOffset&quot;: 454093553,
+                        &quot;duration&quot;: 4800
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;visualCheck&quot;,
+                            1,
+                            &quot;type&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurementCheckboxField&quot;,
+                        &quot;fieldName&quot;: &quot;type&quot;,
+                        &quot;returnType&quot;: &quot;FieldType!&quot;,
+                        &quot;startOffset&quot;: 454101753,
+                        &quot;duration&quot;: 4401
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;visualCheck&quot;,
+                            1,
+                            &quot;label&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurementCheckboxField&quot;,
+                        &quot;fieldName&quot;: &quot;label&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 454109354,
+                        &quot;duration&quot;: 4500
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;visualCheck&quot;,
+                            1,
+                            &quot;isRequired&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurementCheckboxField&quot;,
+                        &quot;fieldName&quot;: &quot;isRequired&quot;,
+                        &quot;returnType&quot;: &quot;Boolean!&quot;,
+                        &quot;startOffset&quot;: 454116054,
+                        &quot;duration&quot;: 4900
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;visualCheck&quot;,
+                            1,
+                            &quot;checkboxFieldValue&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurementCheckboxField&quot;,
+                        &quot;fieldName&quot;: &quot;value&quot;,
+                        &quot;returnType&quot;: &quot;Boolean&quot;,
+                        &quot;startOffset&quot;: 454124154,
+                        &quot;duration&quot;: 4800
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;visualCheck&quot;,
+                            2,
+                            &quot;key&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurementCheckboxField&quot;,
+                        &quot;fieldName&quot;: &quot;key&quot;,
+                        &quot;returnType&quot;: &quot;String!&quot;,
+                        &quot;startOffset&quot;: 454137354,
+                        &quot;duration&quot;: 5300
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;visualCheck&quot;,
+                            2,
+                            &quot;type&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurementCheckboxField&quot;,
+                        &quot;fieldName&quot;: &quot;type&quot;,
+                        &quot;returnType&quot;: &quot;FieldType!&quot;,
+                        &quot;startOffset&quot;: 454145954,
+                        &quot;duration&quot;: 3600
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;visualCheck&quot;,
+                            2,
+                            &quot;label&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurementCheckboxField&quot;,
+                        &quot;fieldName&quot;: &quot;label&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 454151954,
+                        &quot;duration&quot;: 4000
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;visualCheck&quot;,
+                            2,
+                            &quot;isRequired&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurementCheckboxField&quot;,
+                        &quot;fieldName&quot;: &quot;isRequired&quot;,
+                        &quot;returnType&quot;: &quot;Boolean!&quot;,
+                        &quot;startOffset&quot;: 454158054,
+                        &quot;duration&quot;: 3600
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;visualCheck&quot;,
+                            2,
+                            &quot;checkboxFieldValue&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurementCheckboxField&quot;,
+                        &quot;fieldName&quot;: &quot;value&quot;,
+                        &quot;returnType&quot;: &quot;Boolean&quot;,
+                        &quot;startOffset&quot;: 454163954,
+                        &quot;duration&quot;: 4200
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;notes&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurements&quot;,
+                        &quot;fieldName&quot;: &quot;notes&quot;,
+                        &quot;returnType&quot;: &quot;[MaintenanceMeasurementField!]&quot;,
+                        &quot;startOffset&quot;: 454171454,
+                        &quot;duration&quot;: 8200
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;notes&quot;,
+                            0,
+                            &quot;key&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurementTextField&quot;,
+                        &quot;fieldName&quot;: &quot;key&quot;,
+                        &quot;returnType&quot;: &quot;String!&quot;,
+                        &quot;startOffset&quot;: 454210154,
+                        &quot;duration&quot;: 5700
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;notes&quot;,
+                            0,
+                            &quot;type&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurementTextField&quot;,
+                        &quot;fieldName&quot;: &quot;type&quot;,
+                        &quot;returnType&quot;: &quot;FieldType!&quot;,
+                        &quot;startOffset&quot;: 454219954,
+                        &quot;duration&quot;: 15700
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;notes&quot;,
+                            0,
+                            &quot;label&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurementTextField&quot;,
+                        &quot;fieldName&quot;: &quot;label&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 454238755,
+                        &quot;duration&quot;: 4300
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;notes&quot;,
+                            0,
+                            &quot;isRequired&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurementTextField&quot;,
+                        &quot;fieldName&quot;: &quot;isRequired&quot;,
+                        &quot;returnType&quot;: &quot;Boolean!&quot;,
+                        &quot;startOffset&quot;: 454245555,
+                        &quot;duration&quot;: 4200
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;measurements&quot;,
+                            &quot;notes&quot;,
+                            0,
+                            &quot;textFieldValue&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceMeasurementTextField&quot;,
+                        &quot;fieldName&quot;: &quot;value&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 454252555,
+                        &quot;duration&quot;: 4100
+                    }
+                ]
+            }
+        }
+    }
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Access-Control-Allow-Origin: *</div>
+        <div>Connection: keep-alive</div>
+        <div>Content-Length: 9215</div>
+        <div>Date: Wed, 06 Nov 2019 18:46:16 GMT</div>
+        <div>X-Powered-By: Express</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+

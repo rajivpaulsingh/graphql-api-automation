@@ -1,6 +1,6 @@
-package PayLoad;
+package payload;
 
-import Resources.Utilities;
+import utilities.Utilities;
 
 public class PayLoadAPI {
 

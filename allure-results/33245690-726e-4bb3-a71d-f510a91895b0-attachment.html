@@ -1,0 +1,27 @@
+<div>POST to http://dev.chordx.co:4000/</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;variables&quot;: &quot;{\n  \&quot;diagnosticsTracking\&quot;: {\n    \&quot;deviceId\&quot;: \&quot;test\&quot;,\n    \&quot;description\&quot;: \&quot;testing\&quot;,\n    \&quot;metric\&quot;: \&quot;MILLISECONDS\&quot;,\n    \&quot;duration\&quot;: 50000,\n    \&quot;acknowledgement\&quot;: \&quot;ADDRESSED\&quot;\n  }\n}&quot;,
+    &quot;query&quot;: &quot;mutation updateDiagnosticsTracking ($diagnosticsTracking:DiagnosticAnomaliesInput!) {\n  updateDiagnosticsTracking (diagnosticsTracking:$diagnosticsTracking){\n    _id\n    _rev\n    vesselId\n    anomalies {\n      deviceId\n      description\n      metric\n      duration\n      acknowledgement\n    }\n  }\n}&quot;
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://dev.chordx.co:4000/&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;variables&quot;: &quot;{\n  \&quot;diagnosticsTracking\&quot;: {\n    \&quot;deviceId\&quot;: \&quot;test\&quot;,\n    \&quot;description\&quot;: \&quot;testing\&quot;,\n    \&quot;metric\&quot;: \&quot;MILLISECONDS\&quot;,\n    \&quot;duration\&quot;: 50000,\n    \&quot;acknowledgement\&quot;: \&quot;ADDRESSED\&quot;\n  }\n}&quot;,
+    &quot;query&quot;: &quot;mutation updateDiagnosticsTracking ($diagnosticsTracking:DiagnosticAnomaliesInput!) {\n  updateDiagnosticsTracking (diagnosticsTracking:$diagnosticsTracking){\n    _id\n    _rev\n    vesselId\n    anomalies {\n      deviceId\n      description\n      metric\n      duration\n      acknowledgement\n    }\n  }\n}&quot;
+}&#39;
+</div>

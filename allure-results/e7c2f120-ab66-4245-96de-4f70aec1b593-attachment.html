@@ -1,0 +1,27 @@
+<div>POST to http://dev.chordx.co:4000/</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;variables&quot;: &quot;{  \n  \&quot;config\&quot;: {\n    \&quot;sensors\&quot;: {\n      \&quot;TT_0112\&quot;: {\n        \&quot;operator\&quot;: \&quot;EQUAL\&quot;,\n        \&quot;value\&quot;: 88\n      },\n      \&quot;TT_0110\&quot;: {\n        \&quot;operator\&quot;: \&quot;EQUAL\&quot;,\n        \&quot;value\&quot;: 88\n      },\n      \&quot;TT_0111\&quot;: {\n        \&quot;operator\&quot;: \&quot;EQUAL\&quot;,\n        \&quot;value\&quot;: 88\n      },\n      \&quot;PT_015001\&quot;: {\n        \&quot;operator\&quot;: \&quot;EQUAL\&quot;,\n        \&quot;value\&quot;: 88  \n      }\n    }\n  }\n}&quot;,
+    &quot;query&quot;: &quot;mutation updateSimulationConfig($config: SimulatorConfigInput!) {\n  updateSimulator(config: $config) {\n    sensors\n    {\n      TT_0112\n      {\n        operator\n        value\n      }\n      TT_0110\n      {\n        operator\n        value\n      }\n      TT_0111\n      {\n        operator\n        value\n      }\n      TT_0115\n      {\n        operator\n        value\n      }\n      PT_015001\n      {\n        operator\n        value\n      }\n    }\n  }\n}&quot;
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://dev.chordx.co:4000/&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;variables&quot;: &quot;{  \n  \&quot;config\&quot;: {\n    \&quot;sensors\&quot;: {\n      \&quot;TT_0112\&quot;: {\n        \&quot;operator\&quot;: \&quot;EQUAL\&quot;,\n        \&quot;value\&quot;: 88\n      },\n      \&quot;TT_0110\&quot;: {\n        \&quot;operator\&quot;: \&quot;EQUAL\&quot;,\n        \&quot;value\&quot;: 88\n      },\n      \&quot;TT_0111\&quot;: {\n        \&quot;operator\&quot;: \&quot;EQUAL\&quot;,\n        \&quot;value\&quot;: 88\n      },\n      \&quot;PT_015001\&quot;: {\n        \&quot;operator\&quot;: \&quot;EQUAL\&quot;,\n        \&quot;value\&quot;: 88  \n      }\n    }\n  }\n}&quot;,
+    &quot;query&quot;: &quot;mutation updateSimulationConfig($config: SimulatorConfigInput!) {\n  updateSimulator(config: $config) {\n    sensors\n    {\n      TT_0112\n      {\n        operator\n        value\n      }\n      TT_0110\n      {\n        operator\n        value\n      }\n      TT_0111\n      {\n        operator\n        value\n      }\n      TT_0115\n      {\n        operator\n        value\n      }\n      PT_015001\n      {\n        operator\n        value\n      }\n    }\n  }\n}&quot;
+}&#39;
+</div>

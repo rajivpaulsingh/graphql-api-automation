@@ -1,0 +1,529 @@
+<div>Status code 200 </div>
+
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;data&quot;: {
+        &quot;updateDiagnosticsTracking&quot;: {
+            &quot;_id&quot;: &quot;2019-11-06&quot;,
+            &quot;_rev&quot;: &quot;5-ad77f62812f78c6e5354b89577d4a8ef&quot;,
+            &quot;vesselId&quot;: &quot;9422201&quot;,
+            &quot;anomalies&quot;: [
+                {
+                    &quot;deviceId&quot;: &quot;test&quot;,
+                    &quot;description&quot;: &quot;testing&quot;,
+                    &quot;metric&quot;: &quot;MILLISECONDS&quot;,
+                    &quot;duration&quot;: 50000,
+                    &quot;acknowledgement&quot;: &quot;ADDRESSED&quot;
+                },
+                {
+                    &quot;deviceId&quot;: &quot;test&quot;,
+                    &quot;description&quot;: &quot;testing&quot;,
+                    &quot;metric&quot;: &quot;MILLISECONDS&quot;,
+                    &quot;duration&quot;: 50000,
+                    &quot;acknowledgement&quot;: &quot;ADDRESSED&quot;
+                },
+                {
+                    &quot;deviceId&quot;: &quot;test&quot;,
+                    &quot;description&quot;: &quot;testing&quot;,
+                    &quot;metric&quot;: &quot;MILLISECONDS&quot;,
+                    &quot;duration&quot;: 50000,
+                    &quot;acknowledgement&quot;: &quot;ADDRESSED&quot;
+                },
+                {
+                    &quot;deviceId&quot;: &quot;02:00:00:44:55:66&quot;,
+                    &quot;description&quot;: &quot;THERE MAY BE A POTENTIAL ISSUE WITH THIS EQUIPMENT - Sensor alert! Run Diagnostics!&quot;,
+                    &quot;metric&quot;: &quot;MILLISECONDS&quot;,
+                    &quot;duration&quot;: 345928,
+                    &quot;acknowledgement&quot;: &quot;DISMISSED&quot;
+                },
+                {
+                    &quot;deviceId&quot;: &quot;test&quot;,
+                    &quot;description&quot;: &quot;testing&quot;,
+                    &quot;metric&quot;: &quot;MILLISECONDS&quot;,
+                    &quot;duration&quot;: 50000,
+                    &quot;acknowledgement&quot;: &quot;ADDRESSED&quot;
+                },
+                {
+                    &quot;deviceId&quot;: &quot;test&quot;,
+                    &quot;description&quot;: &quot;testing&quot;,
+                    &quot;metric&quot;: &quot;MILLISECONDS&quot;,
+                    &quot;duration&quot;: 50000,
+                    &quot;acknowledgement&quot;: &quot;ADDRESSED&quot;
+                }
+            ]
+        }
+    },
+    &quot;extensions&quot;: {
+        &quot;tracing&quot;: {
+            &quot;version&quot;: 1,
+            &quot;startTime&quot;: &quot;2019-11-06T18:46:10.266Z&quot;,
+            &quot;endTime&quot;: &quot;2019-11-06T18:46:10.421Z&quot;,
+            &quot;duration&quot;: 154709343,
+            &quot;execution&quot;: {
+                &quot;resolvers&quot;: [
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Mutation&quot;,
+                        &quot;fieldName&quot;: &quot;updateDiagnosticsTracking&quot;,
+                        &quot;returnType&quot;: &quot;DiagnosticsTrackingMutation!&quot;,
+                        &quot;startOffset&quot;: 255502,
+                        &quot;duration&quot;: 153899937
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;_id&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;DiagnosticsTrackingMutation&quot;,
+                        &quot;fieldName&quot;: &quot;_id&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 154192639,
+                        &quot;duration&quot;: 22000
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;_rev&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;DiagnosticsTrackingMutation&quot;,
+                        &quot;fieldName&quot;: &quot;_rev&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 154221439,
+                        &quot;duration&quot;: 6000
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;vesselId&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;DiagnosticsTrackingMutation&quot;,
+                        &quot;fieldName&quot;: &quot;vesselId&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 154230939,
+                        &quot;duration&quot;: 4801
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;DiagnosticsTrackingMutation&quot;,
+                        &quot;fieldName&quot;: &quot;anomalies&quot;,
+                        &quot;returnType&quot;: &quot;[Anomalies]&quot;,
+                        &quot;startOffset&quot;: 154240540,
+                        &quot;duration&quot;: 11500
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            0,
+                            &quot;deviceId&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;deviceId&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 154291140,
+                        &quot;duration&quot;: 6600
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            0,
+                            &quot;description&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;description&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 154303840,
+                        &quot;duration&quot;: 5900
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            0,
+                            &quot;metric&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;metric&quot;,
+                        &quot;returnType&quot;: &quot;Metrics&quot;,
+                        &quot;startOffset&quot;: 154314740,
+                        &quot;duration&quot;: 7200
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            0,
+                            &quot;duration&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;duration&quot;,
+                        &quot;returnType&quot;: &quot;Int&quot;,
+                        &quot;startOffset&quot;: 154326140,
+                        &quot;duration&quot;: 7100
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            0,
+                            &quot;acknowledgement&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;acknowledgement&quot;,
+                        &quot;returnType&quot;: &quot;Acknowledged&quot;,
+                        &quot;startOffset&quot;: 154340140,
+                        &quot;duration&quot;: 7400
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            1,
+                            &quot;deviceId&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;deviceId&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 154356340,
+                        &quot;duration&quot;: 4600
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            1,
+                            &quot;description&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;description&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 154365740,
+                        &quot;duration&quot;: 5201
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            1,
+                            &quot;metric&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;metric&quot;,
+                        &quot;returnType&quot;: &quot;Metrics&quot;,
+                        &quot;startOffset&quot;: 154374141,
+                        &quot;duration&quot;: 4500
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            1,
+                            &quot;duration&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;duration&quot;,
+                        &quot;returnType&quot;: &quot;Int&quot;,
+                        &quot;startOffset&quot;: 154384841,
+                        &quot;duration&quot;: 25200
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            1,
+                            &quot;acknowledgement&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;acknowledgement&quot;,
+                        &quot;returnType&quot;: &quot;Acknowledged&quot;,
+                        &quot;startOffset&quot;: 154415241,
+                        &quot;duration&quot;: 5900
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            2,
+                            &quot;deviceId&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;deviceId&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 154430141,
+                        &quot;duration&quot;: 5100
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            2,
+                            &quot;description&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;description&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 154440441,
+                        &quot;duration&quot;: 5100
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            2,
+                            &quot;metric&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;metric&quot;,
+                        &quot;returnType&quot;: &quot;Metrics&quot;,
+                        &quot;startOffset&quot;: 154448541,
+                        &quot;duration&quot;: 3900
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            2,
+                            &quot;duration&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;duration&quot;,
+                        &quot;returnType&quot;: &quot;Int&quot;,
+                        &quot;startOffset&quot;: 154457641,
+                        &quot;duration&quot;: 5200
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            2,
+                            &quot;acknowledgement&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;acknowledgement&quot;,
+                        &quot;returnType&quot;: &quot;Acknowledged&quot;,
+                        &quot;startOffset&quot;: 154468441,
+                        &quot;duration&quot;: 6000
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            3,
+                            &quot;deviceId&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;deviceId&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 154504541,
+                        &quot;duration&quot;: 5101
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            3,
+                            &quot;description&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;description&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 154514742,
+                        &quot;duration&quot;: 4300
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            3,
+                            &quot;metric&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;metric&quot;,
+                        &quot;returnType&quot;: &quot;Metrics&quot;,
+                        &quot;startOffset&quot;: 154521942,
+                        &quot;duration&quot;: 3300
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            3,
+                            &quot;duration&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;duration&quot;,
+                        &quot;returnType&quot;: &quot;Int&quot;,
+                        &quot;startOffset&quot;: 154529942,
+                        &quot;duration&quot;: 5200
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            3,
+                            &quot;acknowledgement&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;acknowledgement&quot;,
+                        &quot;returnType&quot;: &quot;Acknowledged&quot;,
+                        &quot;startOffset&quot;: 154540842,
+                        &quot;duration&quot;: 6500
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            4,
+                            &quot;deviceId&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;deviceId&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 154556442,
+                        &quot;duration&quot;: 5000
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            4,
+                            &quot;description&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;description&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 154564742,
+                        &quot;duration&quot;: 7400
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            4,
+                            &quot;metric&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;metric&quot;,
+                        &quot;returnType&quot;: &quot;Metrics&quot;,
+                        &quot;startOffset&quot;: 154575142,
+                        &quot;duration&quot;: 3400
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            4,
+                            &quot;duration&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;duration&quot;,
+                        &quot;returnType&quot;: &quot;Int&quot;,
+                        &quot;startOffset&quot;: 154584242,
+                        &quot;duration&quot;: 6000
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            4,
+                            &quot;acknowledgement&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;acknowledgement&quot;,
+                        &quot;returnType&quot;: &quot;Acknowledged&quot;,
+                        &quot;startOffset&quot;: 154596842,
+                        &quot;duration&quot;: 4800
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            5,
+                            &quot;deviceId&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;deviceId&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 154627142,
+                        &quot;duration&quot;: 5400
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            5,
+                            &quot;description&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;description&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 154636042,
+                        &quot;duration&quot;: 7601
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            5,
+                            &quot;metric&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;metric&quot;,
+                        &quot;returnType&quot;: &quot;Metrics&quot;,
+                        &quot;startOffset&quot;: 154646943,
+                        &quot;duration&quot;: 21800
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            5,
+                            &quot;duration&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;duration&quot;,
+                        &quot;returnType&quot;: &quot;Int&quot;,
+                        &quot;startOffset&quot;: 154671643,
+                        &quot;duration&quot;: 7200
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;updateDiagnosticsTracking&quot;,
+                            &quot;anomalies&quot;,
+                            5,
+                            &quot;acknowledgement&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Anomalies&quot;,
+                        &quot;fieldName&quot;: &quot;acknowledgement&quot;,
+                        &quot;returnType&quot;: &quot;Acknowledged&quot;,
+                        &quot;startOffset&quot;: 154685343,
+                        &quot;duration&quot;: 5000
+                    }
+                ]
+            }
+        }
+    }
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Access-Control-Allow-Origin: *</div>
+        <div>Connection: keep-alive</div>
+        <div>Content-Length: 7317</div>
+        <div>Date: Wed, 06 Nov 2019 18:46:10 GMT</div>
+        <div>X-Powered-By: Express</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+

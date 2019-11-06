@@ -1,37 +1,33 @@
-# GraphQL API Automation Framework
+# ChordX API Automation Framework
+ 
+## Table of Contents
+- [Installation & Run](#installation)
+    - [Quick Start](#quick-start)
+    - [MVN commands](#mvn-commands)
+    - [Allure Commands](#allure-commands)
+- [Useful information](#useful-information)
+    - [Project Structure](#project-stracture)
+    - [Links](#links) 
+ 
+ ## <a name="installation"></a>Installation & Run
+ ### <a name="quick-start"></a>Quick Start for Mac User
+ ```bash
+ # Install maven 
+ brew install maven
+ 
+ #Install allure
+ brew install allure
+ 
+ # Run Tests
+ mvn clean -Denvironment={environment_variable} test
+ 
+ # Generate Allure Report 
+ allure serve <directory-with-results>
+ ```
+**TO RUN ALLURE AND MAVEN: Make sure you have Java version = 1.8.0_161 and allure version = 2.6.0** <br> 
+**! DO NOT FORGOT set global variable JAVA_HOME in your terminal.** <br>
 
-We are using the following elements in this API automation framework:
- - Rest Assured library
- - TestNG testing framework
- - log4j2 
- - Apache Maven
- - Selenium Java
- - pom.xml
- 
- ## Rest Assured
- API automation framework in this repository. Rest Assured is one of the most popular libraries which is highly used in API Test Automation using Java.
- 
- ## TestNG
- TestNG is a testing framework for the Java programming language. The design goal of TestNG is to cover a wider range of test categories: unit, functional, end-to-end, integration, etc. The major advantages of TestNG are:
- - Provides the ability to produce HTML reports
- - Annotations made easy
- - Test cases can be grouped and prioritized
- - Parallel testing is possible
- - Data parametrization is possible
- 
- Use testng.xml to run all the tests or group the tests based on the priority, classifications, smokes or regression.
-
- 
- ## log4j2
- Apache log4j is a Java based logging utility. It allows us to define our own log levels.
- 
- ## Apache Maven
- Maven is a software project management and comprehension tool. Maven can manage a project's build, reporting and documentation from a central piece of information. Use pom.xml to install the required dependencies. 
-  
- ## Selenium Java
- Selenium is an open source testing tool that caters different type of testing. Its a portable framework for testing web application, mobile apps and APIs.
- 
- ### <a name="mvn-commands"></a>MVN commands
+### <a name="mvn-commands"></a>MVN commands 
  | Task                                     | Description                                            |
  |------------------------------------------|--------------------------------------------------------|
  | `compile`                                | Compile the source code of the project                 |
@@ -44,5 +40,38 @@ We are using the following elements in this API automation framework:
  | `-Dtest={test_name}`                     | Run specific test                                      |      
  | `-Denvironment={environment_variable}`   | Define environment variable                            |
  
+ ### <a name="allure-commands"></a>Allure commands
+  Note: After when tests are finished their work allure automatically generate allure-result folder. 
+        After that you can generate report. If you try to generate locally use `server` for 
+  
+  | Task                                            | Description                                            |
+  |-------------------------------------------------|--------------------------------------------------------|
+  | `allure serve <directory-with-results>`         | Generates a report in temporary folder from the data   |
+  |                                                 | found in the provided path and then creates a local    |
+  |                                                 | jetty server instance, serves generated report and     |
+  |                                                 | opens it in the default browser.                       |
+  | `allure generate <directory-with-results>`      | Generate the report. The report will be generated      |
+  |                                                 | to allure-report folder.                               |
+  | `allure open <directory-with-report>`           | When the report is generated you can open it in your   |
+  |                                                 | default system browser.                                |
+  
+  
+ ## <a name="useful-information"></a>Useful information
+ ### <a name="project-stracture"></a>Project Structure
  
+ | Path                                     | Description                                            |
+ |------------------------------------------|--------------------------------------------------------|
+ | `src/test/java/graphql/`                 | Folder for graphql schemas                             |
+ | `src/test/java/payload/`                 | Folder for predefined queries for Rest Assured requests|
+ | `src/main/java/`                         | Base folder for core code                              |
+ | `src/main/java/utilities`                | Util folder for RestClient and other utilities         |
+ | `src/main/test/java/query`               | Folder for query tests                                 |
+ | `src/main/test/java/mutation/`           | Folder for mutation tests                              |
+ | `src/main/test/java/testconfig`          | Precondition -> Before Tests                           |
+ 
+### <a name="links"></a>Links
+1. [Allure Documentation](https://docs.qameta.io/allure/#_testng)
+2. [TestNG Documentation](https://testng.org/doc/documentation-main.html)
+3. [Rest Assured Documentation](https://github.com/rest-assured/rest-assured/wiki/Usage)
+4. [Maven Documentation](https://maven.apache.org/guides/)
  

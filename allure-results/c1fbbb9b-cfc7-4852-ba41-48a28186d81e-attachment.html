@@ -1,0 +1,210 @@
+<div>Status code 200 </div>
+
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;data&quot;: {
+        &quot;getSimulatorConfig&quot;: {
+            &quot;sensors&quot;: {
+                &quot;TT_0110&quot;: {
+                    &quot;operator&quot;: &quot;EQUAL&quot;,
+                    &quot;value&quot;: 88
+                },
+                &quot;PT_015001&quot;: {
+                    &quot;operator&quot;: &quot;EQUAL&quot;,
+                    &quot;value&quot;: 88
+                }
+            },
+            &quot;engineRpm&quot;: {
+                &quot;rpm&quot;: 70
+            },
+            &quot;cylinderPressure&quot;: {
+                &quot;compression&quot;: 77,
+                &quot;maximum&quot;: 105
+            }
+        }
+    },
+    &quot;extensions&quot;: {
+        &quot;tracing&quot;: {
+            &quot;version&quot;: 1,
+            &quot;startTime&quot;: &quot;2019-11-06T18:41:49.821Z&quot;,
+            &quot;endTime&quot;: &quot;2019-11-06T18:41:49.828Z&quot;,
+            &quot;duration&quot;: 6707250,
+            &quot;execution&quot;: {
+                &quot;resolvers&quot;: [
+                    {
+                        &quot;path&quot;: [
+                            &quot;getSimulatorConfig&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Query&quot;,
+                        &quot;fieldName&quot;: &quot;getSimulatorConfig&quot;,
+                        &quot;returnType&quot;: &quot;SimulatorConfig!&quot;,
+                        &quot;startOffset&quot;: 109401,
+                        &quot;duration&quot;: 6407547
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;getSimulatorConfig&quot;,
+                            &quot;sensors&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;SimulatorConfig&quot;,
+                        &quot;fieldName&quot;: &quot;sensors&quot;,
+                        &quot;returnType&quot;: &quot;SimulatorSensorConfig&quot;,
+                        &quot;startOffset&quot;: 6535049,
+                        &quot;duration&quot;: 15600
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;getSimulatorConfig&quot;,
+                            &quot;sensors&quot;,
+                            &quot;TT_0110&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;SimulatorSensorConfig&quot;,
+                        &quot;fieldName&quot;: &quot;TT_0110&quot;,
+                        &quot;returnType&quot;: &quot;SensorConfig&quot;,
+                        &quot;startOffset&quot;: 6562549,
+                        &quot;duration&quot;: 7200
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;getSimulatorConfig&quot;,
+                            &quot;sensors&quot;,
+                            &quot;TT_0110&quot;,
+                            &quot;operator&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;SensorConfig&quot;,
+                        &quot;fieldName&quot;: &quot;operator&quot;,
+                        &quot;returnType&quot;: &quot;Operator&quot;,
+                        &quot;startOffset&quot;: 6580349,
+                        &quot;duration&quot;: 5200
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;getSimulatorConfig&quot;,
+                            &quot;sensors&quot;,
+                            &quot;TT_0110&quot;,
+                            &quot;value&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;SensorConfig&quot;,
+                        &quot;fieldName&quot;: &quot;value&quot;,
+                        &quot;returnType&quot;: &quot;Float&quot;,
+                        &quot;startOffset&quot;: 6590949,
+                        &quot;duration&quot;: 5300
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;getSimulatorConfig&quot;,
+                            &quot;sensors&quot;,
+                            &quot;PT_015001&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;SimulatorSensorConfig&quot;,
+                        &quot;fieldName&quot;: &quot;PT_015001&quot;,
+                        &quot;returnType&quot;: &quot;SensorConfig&quot;,
+                        &quot;startOffset&quot;: 6602549,
+                        &quot;duration&quot;: 5100
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;getSimulatorConfig&quot;,
+                            &quot;sensors&quot;,
+                            &quot;PT_015001&quot;,
+                            &quot;operator&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;SensorConfig&quot;,
+                        &quot;fieldName&quot;: &quot;operator&quot;,
+                        &quot;returnType&quot;: &quot;Operator&quot;,
+                        &quot;startOffset&quot;: 6616749,
+                        &quot;duration&quot;: 3400
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;getSimulatorConfig&quot;,
+                            &quot;sensors&quot;,
+                            &quot;PT_015001&quot;,
+                            &quot;value&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;SensorConfig&quot;,
+                        &quot;fieldName&quot;: &quot;value&quot;,
+                        &quot;returnType&quot;: &quot;Float&quot;,
+                        &quot;startOffset&quot;: 6624149,
+                        &quot;duration&quot;: 3900
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;getSimulatorConfig&quot;,
+                            &quot;engineRpm&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;SimulatorConfig&quot;,
+                        &quot;fieldName&quot;: &quot;engineRpm&quot;,
+                        &quot;returnType&quot;: &quot;EngineRpmConfig&quot;,
+                        &quot;startOffset&quot;: 6634149,
+                        &quot;duration&quot;: 7100
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;getSimulatorConfig&quot;,
+                            &quot;engineRpm&quot;,
+                            &quot;rpm&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;EngineRpmConfig&quot;,
+                        &quot;fieldName&quot;: &quot;rpm&quot;,
+                        &quot;returnType&quot;: &quot;Int&quot;,
+                        &quot;startOffset&quot;: 6650649,
+                        &quot;duration&quot;: 5200
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;getSimulatorConfig&quot;,
+                            &quot;cylinderPressure&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;SimulatorConfig&quot;,
+                        &quot;fieldName&quot;: &quot;cylinderPressure&quot;,
+                        &quot;returnType&quot;: &quot;CylinderPressureConfig&quot;,
+                        &quot;startOffset&quot;: 6662650,
+                        &quot;duration&quot;: 5200
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;getSimulatorConfig&quot;,
+                            &quot;cylinderPressure&quot;,
+                            &quot;compression&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;CylinderPressureConfig&quot;,
+                        &quot;fieldName&quot;: &quot;compression&quot;,
+                        &quot;returnType&quot;: &quot;Float&quot;,
+                        &quot;startOffset&quot;: 6678150,
+                        &quot;duration&quot;: 5200
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;getSimulatorConfig&quot;,
+                            &quot;cylinderPressure&quot;,
+                            &quot;maximum&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;CylinderPressureConfig&quot;,
+                        &quot;fieldName&quot;: &quot;maximum&quot;,
+                        &quot;returnType&quot;: &quot;Float&quot;,
+                        &quot;startOffset&quot;: 6689350,
+                        &quot;duration&quot;: 3700
+                    }
+                ]
+            }
+        }
+    }
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Access-Control-Allow-Origin: *</div>
+        <div>Connection: keep-alive</div>
+        <div>Content-Length: 2627</div>
+        <div>Date: Wed, 06 Nov 2019 18:41:49 GMT</div>
+        <div>X-Powered-By: Express</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+

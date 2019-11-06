@@ -1,0 +1,27 @@
+<div>POST to http://dev.chordx.co:4000/</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;variables&quot;: &quot;{\n  \&quot;userFeedback\&quot;: {\n    \&quot;name\&quot;: \&quot;Test Feedback\&quot;,\n    \&quot;rank\&quot;: \&quot;QA\&quot;,\n    \&quot;feedback\&quot;: \&quot;This feedback was created by automation\&quot;\n  }\n}&quot;,
+    &quot;query&quot;: &quot;mutation saveFeedback ($userFeedback: UserFeedbackInput!){\n  saveFeedback (userFeedback: $userFeedback) {\n    _id\n    name\n    rank\n    createdDate\n    vesselId\n    feedback\n  }\n}&quot;
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://dev.chordx.co:4000/&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;variables&quot;: &quot;{\n  \&quot;userFeedback\&quot;: {\n    \&quot;name\&quot;: \&quot;Test Feedback\&quot;,\n    \&quot;rank\&quot;: \&quot;QA\&quot;,\n    \&quot;feedback\&quot;: \&quot;This feedback was created by automation\&quot;\n  }\n}&quot;,
+    &quot;query&quot;: &quot;mutation saveFeedback ($userFeedback: UserFeedbackInput!){\n  saveFeedback (userFeedback: $userFeedback) {\n    _id\n    name\n    rank\n    createdDate\n    vesselId\n    feedback\n  }\n}&quot;
+}&#39;
+</div>

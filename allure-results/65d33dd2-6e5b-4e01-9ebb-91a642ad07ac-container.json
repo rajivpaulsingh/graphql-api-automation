@@ -1,0 +1,1 @@
+{"uuid":"65d33dd2-6e5b-4e01-9ebb-91a642ad07ac","name":"ChordXApi-Automation","children":["07599189-52d2-403f-ae89-5454998f36c1"],"befores":[{"name":"getData","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1573066345637,"stop":1573066346407}],"afters":[],"links":[],"start":1573066345606,"stop":1573066349152}

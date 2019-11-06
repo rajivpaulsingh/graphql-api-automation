@@ -1,0 +1,27 @@
+<div>POST to http://dev.chordx.co:4000/</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;variables&quot;: &quot;{\n  \&quot;inputRunningHours\&quot;: {\n    \&quot;newRunningHours\&quot;: 10,\n    \&quot;id\&quot;: \&quot;01DE8GT5GMXAPN5JKH8486Z7A2\&quot;\n  }\n}&quot;,
+    &quot;query&quot;: &quot;mutation resetEngineCounter ($inputRunningHours: RunningHoursInput!) {\n  resetEngineCounter (inputRunningHours: $inputRunningHours) {\n    _id\n    model\n    name\n    serialNumber\n    manufacturer\n    generatorType\n    firingOrder\n    isOnline\n    imageUrl\n    \n    subEquipment\n    {\n      name\n    }\n    runningHours\n  }\n}&quot;
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://dev.chordx.co:4000/&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;variables&quot;: &quot;{\n  \&quot;inputRunningHours\&quot;: {\n    \&quot;newRunningHours\&quot;: 10,\n    \&quot;id\&quot;: \&quot;01DE8GT5GMXAPN5JKH8486Z7A2\&quot;\n  }\n}&quot;,
+    &quot;query&quot;: &quot;mutation resetEngineCounter ($inputRunningHours: RunningHoursInput!) {\n  resetEngineCounter (inputRunningHours: $inputRunningHours) {\n    _id\n    model\n    name\n    serialNumber\n    manufacturer\n    generatorType\n    firingOrder\n    isOnline\n    imageUrl\n    \n    subEquipment\n    {\n      name\n    }\n    runningHours\n  }\n}&quot;
+}&#39;
+</div>

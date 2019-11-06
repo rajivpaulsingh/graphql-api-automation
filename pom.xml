@@ -18,7 +18,10 @@
     <log4j.version>1.2.17</log4j.version>
     <jaxb.osgi.version>2.3.2</jaxb.osgi.version>
     <extentreports.version>2.40.2</extentreports.version>
-    <maven.surefire.plugin.version>3.0.0-M3</maven.surefire.plugin.version>
+    <aspectj.version>1.9.4</aspectj.version>
+    <allure.testng.version>2.13.0</allure.testng.version>
+    <allure.rest.assured.version>2.13.0</allure.rest.assured.version>
+    <maven.surefire.plugin.version>2.20</maven.surefire.plugin.version>
   </properties>
 
   <dependencies>
@@ -59,15 +62,22 @@
     </dependency>
 
     <dependency>
-      <groupId>com.sun.xml.bind</groupId>
-      <artifactId>jaxb-osgi</artifactId>
-      <version>${jaxb.osgi.version}</version>
+      <groupId>io.qameta.allure</groupId>
+      <artifactId>allure-testng</artifactId>
+      <version>${allure.testng.version}</version>
+      <scope>test</scope>
     </dependency>
 
     <dependency>
-      <groupId>com.relevantcodes</groupId>
-      <artifactId>extentreports</artifactId>
-      <version>${extentreports.version}</version>
+      <groupId>io.qameta.allure</groupId>
+      <artifactId>allure-rest-assured</artifactId>
+      <version>${allure.rest.assured.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>${aspectj.version}</version>
     </dependency>
   </dependencies>
 
@@ -78,13 +88,30 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>${maven.surefire.plugin.version}</version>
           <configuration>
+            <argLine>
+              -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+            </argLine>
+            <properties>
+              <property>
+                <name>listener</name>
+                <value>io.qameta.allure.testng.AllureTestNg</value>
+              </property>
+            </properties>
             <suiteXmlFiles>
               <suiteXmlFile>testng.xml</suiteXmlFile>
             </suiteXmlFiles>
             <systemPropertyVariables>
             <!--Used for BaseURL F.E. RestConfig.setBaseURI(System.getProperty("project.baseUrl"))-->
               <project.baseUrl>${envBaseUrl}</project.baseUrl>
+              <allure.issues.tracker.pattern>https://chordx.atlassian.net/browse/{}</allure.issues.tracker.pattern>
+              <allure.link.tms.pattern>https://chordx.atlassian.net/browse/{}</allure.link.tms.pattern>
           </systemPropertyVariables>
+            <systemProperties>
+              <property>
+                <name>allure.results.directory</name>
+                <value>${project.basedir}/allure-results</value>
+              </property>
+            </systemProperties>
           </configuration>
         </plugin>
         <plugin>

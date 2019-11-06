@@ -1,0 +1,25 @@
+<div>POST to http://dev.chordx.co:4000/</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;query&quot;: &quot;query {\n  app(packageName:\&quot;io.magellanx.chordx.dashboard.sandbox\&quot;){\n    _id\n    packageName\n        latestVersion {\n      _id\n      appName\n      appVersion\n      appUrl\n    }\n  }\n}&quot;
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://dev.chordx.co:4000/&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;query&quot;: &quot;query {\n  app(packageName:\&quot;io.magellanx.chordx.dashboard.sandbox\&quot;){\n    _id\n    packageName\n        latestVersion {\n      _id\n      appName\n      appVersion\n      appUrl\n    }\n  }\n}&quot;
+}&#39;
+</div>

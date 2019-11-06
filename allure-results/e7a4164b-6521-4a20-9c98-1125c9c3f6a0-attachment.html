@@ -1,0 +1,227 @@
+<div>Status code 200 </div>
+
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;data&quot;: {
+        &quot;plannedMaintenance&quot;: {
+            &quot;overdueCount&quot;: 0,
+            &quot;cursor&quot;: null,
+            &quot;maintenanceJobs&quot;: [
+                {
+                    &quot;_id&quot;: &quot;01DQ5Y0D3FQHM12XH22EE6MT8Z&quot;,
+                    &quot;title&quot;: &quot;EXHAUST VALVE-02 H32000_ROUTINE_OVERHAUL&quot;,
+                    &quot;name&quot;: &quot;Exhaust Valve 2 Routine Overhaul&quot;,
+                    &quot;findings&quot;: null,
+                    &quot;manualUrl&quot;: &quot;http://fof-dev-edge:11002/chordx/maintenance-manuals/H32000_Exhaust_Valve_Routine_Overhaul_m.pdf&quot;,
+                    &quot;status&quot;: &quot;SCHEDULED&quot;,
+                    &quot;scheduledDate&quot;: &quot;2025-01-12T00:00:00.000Z&quot;,
+                    &quot;performedDate&quot;: &quot;2019-10-29T20:42:28.055Z&quot;,
+                    &quot;completedDate&quot;: null,
+                    &quot;isOverdue&quot;: false
+                }
+            ]
+        }
+    },
+    &quot;extensions&quot;: {
+        &quot;tracing&quot;: {
+            &quot;version&quot;: 1,
+            &quot;startTime&quot;: &quot;2019-11-06T18:46:12.128Z&quot;,
+            &quot;endTime&quot;: &quot;2019-11-06T18:46:12.579Z&quot;,
+            &quot;duration&quot;: 451595236,
+            &quot;execution&quot;: {
+                &quot;resolvers&quot;: [
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Query&quot;,
+                        &quot;fieldName&quot;: &quot;plannedMaintenance&quot;,
+                        &quot;returnType&quot;: &quot;MaintenanceJobs&quot;,
+                        &quot;startOffset&quot;: 178202,
+                        &quot;duration&quot;: 451191032
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;overdueCount&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJobs&quot;,
+                        &quot;fieldName&quot;: &quot;overdueCount&quot;,
+                        &quot;returnType&quot;: &quot;Int&quot;,
+                        &quot;startOffset&quot;: 451392834,
+                        &quot;duration&quot;: 23401
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;cursor&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJobs&quot;,
+                        &quot;fieldName&quot;: &quot;cursor&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 451421035,
+                        &quot;duration&quot;: 6400
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJobs&quot;,
+                        &quot;fieldName&quot;: &quot;maintenanceJobs&quot;,
+                        &quot;returnType&quot;: &quot;[MaintenanceJob!]&quot;,
+                        &quot;startOffset&quot;: 451432935,
+                        &quot;duration&quot;: 14100
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;_id&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;_id&quot;,
+                        &quot;returnType&quot;: &quot;ID!&quot;,
+                        &quot;startOffset&quot;: 451480735,
+                        &quot;duration&quot;: 11800
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;title&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;title&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 451497135,
+                        &quot;duration&quot;: 7800
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;name&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;name&quot;,
+                        &quot;returnType&quot;: &quot;String!&quot;,
+                        &quot;startOffset&quot;: 451508135,
+                        &quot;duration&quot;: 4600
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;findings&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;findings&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 451516935,
+                        &quot;duration&quot;: 7400
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;manualUrl&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;manualUrl&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 451527635,
+                        &quot;duration&quot;: 4100
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;status&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;status&quot;,
+                        &quot;returnType&quot;: &quot;MaintenanceStatus!&quot;,
+                        &quot;startOffset&quot;: 451536535,
+                        &quot;duration&quot;: 4900
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;scheduledDate&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;scheduledDate&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 451546235,
+                        &quot;duration&quot;: 5801
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;performedDate&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;performedDate&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 451554936,
+                        &quot;duration&quot;: 3800
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;completedDate&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;completedDate&quot;,
+                        &quot;returnType&quot;: &quot;String&quot;,
+                        &quot;startOffset&quot;: 451561136,
+                        &quot;duration&quot;: 7700
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;plannedMaintenance&quot;,
+                            &quot;maintenanceJobs&quot;,
+                            0,
+                            &quot;isOverdue&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;MaintenanceJob&quot;,
+                        &quot;fieldName&quot;: &quot;isOverdue&quot;,
+                        &quot;returnType&quot;: &quot;Boolean&quot;,
+                        &quot;startOffset&quot;: 451571736,
+                        &quot;duration&quot;: 3600
+                    }
+                ]
+            }
+        }
+    }
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Access-Control-Allow-Origin: *</div>
+        <div>Connection: keep-alive</div>
+        <div>Content-Length: 3114</div>
+        <div>Date: Wed, 06 Nov 2019 18:46:12 GMT</div>
+        <div>X-Powered-By: Express</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+

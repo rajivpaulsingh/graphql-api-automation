@@ -1,0 +1,27 @@
+<div>POST to http://dev.chordx.co:4000/</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;variables&quot;: &quot;{\n \&quot;issuesFilter\&quot;: {\n  \&quot;equipmentId\&quot;: \&quot;01DE8GT5GMXAPN5JKH8486Z7A2\&quot;\n }\n}&quot;,
+    &quot;query&quot;: &quot;query {\n  maintenanceIssues(filter: {\n  equipmentId: \&quot;01DE8GT5GMXAPN5JKH8486Z7A2\&quot;\n }) {\n    _id\n    name\n    likelihood\n    checks {\n      name\n      value\n    }\n    correctiveActions {\n      name\n    }\n  }\n}&quot;
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://dev.chordx.co:4000/&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;variables&quot;: &quot;{\n \&quot;issuesFilter\&quot;: {\n  \&quot;equipmentId\&quot;: \&quot;01DE8GT5GMXAPN5JKH8486Z7A2\&quot;\n }\n}&quot;,
+    &quot;query&quot;: &quot;query {\n  maintenanceIssues(filter: {\n  equipmentId: \&quot;01DE8GT5GMXAPN5JKH8486Z7A2\&quot;\n }) {\n    _id\n    name\n    likelihood\n    checks {\n      name\n      value\n    }\n    correctiveActions {\n      name\n    }\n  }\n}&quot;
+}&#39;
+</div>

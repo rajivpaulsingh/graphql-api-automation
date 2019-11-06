@@ -1,0 +1,84 @@
+<div>Status code 200 </div>
+
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;data&quot;: {
+        &quot;getServerVersion&quot;: {
+            &quot;commitShortSHA&quot;: &quot;900f55d3&quot;,
+            &quot;commitTimeISO&quot;: &quot;2019-11-06T03:57:24.000Z&quot;,
+            &quot;dateDeployed&quot;: &quot;2019-11-06T08:03:13.739Z&quot;
+        }
+    },
+    &quot;extensions&quot;: {
+        &quot;tracing&quot;: {
+            &quot;version&quot;: 1,
+            &quot;startTime&quot;: &quot;2019-11-06T18:41:38.865Z&quot;,
+            &quot;endTime&quot;: &quot;2019-11-06T18:41:39.036Z&quot;,
+            &quot;duration&quot;: 170702862,
+            &quot;execution&quot;: {
+                &quot;resolvers&quot;: [
+                    {
+                        &quot;path&quot;: [
+                            &quot;getServerVersion&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;Query&quot;,
+                        &quot;fieldName&quot;: &quot;getServerVersion&quot;,
+                        &quot;returnType&quot;: &quot;ServerVersion!&quot;,
+                        &quot;startOffset&quot;: 122601,
+                        &quot;duration&quot;: 170402460
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;getServerVersion&quot;,
+                            &quot;commitShortSHA&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;ServerVersion&quot;,
+                        &quot;fieldName&quot;: &quot;commitShortSHA&quot;,
+                        &quot;returnType&quot;: &quot;String!&quot;,
+                        &quot;startOffset&quot;: 170584062,
+                        &quot;duration&quot;: 72000
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;getServerVersion&quot;,
+                            &quot;commitTimeISO&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;ServerVersion&quot;,
+                        &quot;fieldName&quot;: &quot;commitTimeISO&quot;,
+                        &quot;returnType&quot;: &quot;String!&quot;,
+                        &quot;startOffset&quot;: 170662562,
+                        &quot;duration&quot;: 10800
+                    },
+                    {
+                        &quot;path&quot;: [
+                            &quot;getServerVersion&quot;,
+                            &quot;dateDeployed&quot;
+                        ],
+                        &quot;parentType&quot;: &quot;ServerVersion&quot;,
+                        &quot;fieldName&quot;: &quot;dateDeployed&quot;,
+                        &quot;returnType&quot;: &quot;String!&quot;,
+                        &quot;startOffset&quot;: 170677262,
+                        &quot;duration&quot;: 5900
+                    }
+                ]
+            }
+        }
+    }
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Access-Control-Allow-Origin: *</div>
+        <div>Connection: keep-alive</div>
+        <div>Content-Length: 963</div>
+        <div>Date: Wed, 06 Nov 2019 18:41:39 GMT</div>
+        <div>X-Powered-By: Express</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+

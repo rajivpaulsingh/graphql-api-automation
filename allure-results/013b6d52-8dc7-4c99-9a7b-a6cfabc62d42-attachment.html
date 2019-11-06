@@ -1,0 +1,27 @@
+<div>POST to http://dev.chordx.co:4000/</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;variables&quot;: &quot;{\n  \&quot;userIssueMaintenance\&quot;: {\n    \&quot;sensorSnapshots\&quot;: {\n        \&quot;_id\&quot;: \&quot;01DE5VTVHE9GRQZMF9M3T8QPN9\&quot;,\n        \&quot;identifier\&quot;:\&quot;ZT-016001\&quot;,\n        \&quot;name\&quot;:\&quot;Engine speed\&quot;,\n        \&quot;reading\&quot;: {\n          \&quot;timestamp\&quot;:\&quot;2019-11-06T17:26:00.106Z\&quot;,\n          \&quot;value\&quot;:70,\n          \&quot;unitType\&quot;:\&quot;RPM\&quot;\n        }\n      }\n    }\n}&quot;,
+    &quot;query&quot;: &quot;mutation createCompletedMaintenanceJob ($userIssueMaintenance: MaintenanceJobUserIssueInput!){\n  createCompletedMaintenanceJob(userIssueMaintenance: $userIssueMaintenance)\n   {\n    _id\n    title\n    status\n    description\n    shipName\n    equipmentName\n    materials\n    {\n      name\n      quantity\n    }\n  }\n}&quot;
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://dev.chordx.co:4000/&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;variables&quot;: &quot;{\n  \&quot;userIssueMaintenance\&quot;: {\n    \&quot;sensorSnapshots\&quot;: {\n        \&quot;_id\&quot;: \&quot;01DE5VTVHE9GRQZMF9M3T8QPN9\&quot;,\n        \&quot;identifier\&quot;:\&quot;ZT-016001\&quot;,\n        \&quot;name\&quot;:\&quot;Engine speed\&quot;,\n        \&quot;reading\&quot;: {\n          \&quot;timestamp\&quot;:\&quot;2019-11-06T17:26:00.106Z\&quot;,\n          \&quot;value\&quot;:70,\n          \&quot;unitType\&quot;:\&quot;RPM\&quot;\n        }\n      }\n    }\n}&quot;,
+    &quot;query&quot;: &quot;mutation createCompletedMaintenanceJob ($userIssueMaintenance: MaintenanceJobUserIssueInput!){\n  createCompletedMaintenanceJob(userIssueMaintenance: $userIssueMaintenance)\n   {\n    _id\n    title\n    status\n    description\n    shipName\n    equipmentName\n    materials\n    {\n      name\n      quantity\n    }\n  }\n}&quot;
+}&#39;
+</div>

@@ -1,0 +1,27 @@
+<div>POST to http://dev.chordx.co:4000/</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;variables&quot;: &quot;{\n \&quot;equipmentId\&quot;: \&quot;01DE8GT5GMXAPN5JKH8486Z7A2\&quot;\n}&quot;,
+    &quot;query&quot;: &quot;query GetMaintenanceJobs($equipmentId: String!){\n  plannedMaintenance(filter:{equipmentId:$equipmentId}){\n    maintenanceJobs{\n      _id,\n    title\n    name\n    status\n    manualUrl\n    scheduledDate\n    statusUpdatedDate\n    completedDate\n    findings\n    materials {\n      name\n      quantity\n    }\n     measurements {\n      preMeasurements {\n        ...MaintenanceMeasurementFieldFragment\n      }\n      maintenance {\n       ...MaintenanceMeasurementFieldFragment\n      }\n      postMeasurements {\n       ...MaintenanceMeasurementFieldFragment\n      }\n      visualCheck {\n        ...MaintenanceMeasurementFieldFragment\n      }\n      notes {\n        ...MaintenanceMeasurementFieldFragment\n      }\n    }\n    }\n    \n  }\n}\nfragment MaintenanceMeasurementFieldFragment on MaintenanceMeasurementField {\n  key\n  type\n  label\n  isRequired\n  ... on MaintenanceMeasurementCheckboxField {\n    checkboxFieldValue : value\n  }\n  ... on MaintenanceMeasurementNumberField {\n   numberFieldValue : value\n  unitType\n  }\n  ... on MaintenanceMeasurementTextField {\n   textFieldValue : value\n  }\n  ... on MaintenanceMeasurementToggleField {\n   toggleFieldValue : value\n  }\n  ... on MaintenanceMeasurementImageField {\n    imageFieldValue : value\n  }\n \n}&quot;
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://dev.chordx.co:4000/&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;variables&quot;: &quot;{\n \&quot;equipmentId\&quot;: \&quot;01DE8GT5GMXAPN5JKH8486Z7A2\&quot;\n}&quot;,
+    &quot;query&quot;: &quot;query GetMaintenanceJobs($equipmentId: String!){\n  plannedMaintenance(filter:{equipmentId:$equipmentId}){\n    maintenanceJobs{\n      _id,\n    title\n    name\n    status\n    manualUrl\n    scheduledDate\n    statusUpdatedDate\n    completedDate\n    findings\n    materials {\n      name\n      quantity\n    }\n     measurements {\n      preMeasurements {\n        ...MaintenanceMeasurementFieldFragment\n      }\n      maintenance {\n       ...MaintenanceMeasurementFieldFragment\n      }\n      postMeasurements {\n       ...MaintenanceMeasurementFieldFragment\n      }\n      visualCheck {\n        ...MaintenanceMeasurementFieldFragment\n      }\n      notes {\n        ...MaintenanceMeasurementFieldFragment\n      }\n    }\n    }\n    \n  }\n}\nfragment MaintenanceMeasurementFieldFragment on MaintenanceMeasurementField {\n  key\n  type\n  label\n  isRequired\n  ... on MaintenanceMeasurementCheckboxField {\n    checkboxFieldValue : value\n  }\n  ... on MaintenanceMeasurementNumberField {\n   numberFieldValue : value\n  unitType\n  }\n  ... on MaintenanceMeasurementTextField {\n   textFieldValue : value\n  }\n  ... on MaintenanceMeasurementToggleField {\n   toggleFieldValue : value\n  }\n  ... on MaintenanceMeasurementImageField {\n    imageFieldValue : value\n  }\n \n}&quot;
+}&#39;
+</div>
